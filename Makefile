@@ -4,7 +4,7 @@ CFLAGS=-Wall -g -O3 -I$(RABBITMQ)/include -I/Applications/Postgres.app/Contents/
 LDFLAGS=
 LDLIBS=-L$(RABBITMQ)/lib -lrabbitmq -L/Applications/Postgres.app/Contents/Versions/9.5/lib -lpq
 
-OBJS=main.o utils.o mqconsumer.o
+OBJS=main.o utils.o mq.o pg.o
 
 all: main
 

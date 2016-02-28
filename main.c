@@ -1,12 +1,15 @@
 #include <stdio.h>
 
-#include "mqconsumer.h"
+#include "mq.h"
+#include "pg.h"
 
 int main(){
-    mqconsumer_t * handle;
+    mq_t * mq;
+    pg_t * pg;
 
-    handle = mqconsumer_init();
-    
+    mq = mq_init();
+    pg = pg_init();
+
     printf("Hello World!\n");
     return 0;
 }
