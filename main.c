@@ -6,10 +6,12 @@
 int main(){
     mq_t * mq;
     pg_t * pg;
+    char * buf = "";
 
     mq = mq_init();
     pg = pg_init();
 
-    printf("Hello World!\n");
-    return 0;
+    mq_consume(mq, buf);
+
+     return 0;
 }

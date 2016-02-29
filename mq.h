@@ -12,4 +12,5 @@ typedef struct mq_s {
 } mq_t;
 
 mq_t * mq_init();
+bool mq_consume(mq_t * handle, char * buffer);
 bool mq_free(mq_t * handle);
